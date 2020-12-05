@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
     public void delete(View view){
         if(!(resault.getText().toString().equals("")))
         {
-            String kopyaekran = resault.getText().toString();
-            kopyaekran=kopyaekran.substring(0,kopyaekran.length()-1);
+            String copyScreen = resault.getText().toString();
+            copyScreen=copyScreen.substring(0,kopyaekran.length()-1);
             resault.setText(kopyaekran);
         }
     }

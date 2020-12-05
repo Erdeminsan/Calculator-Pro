@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         if(!(resault.getText().toString().equals("")))
         {
             String copyScreen = resault.getText().toString();
-            copyScreen=copyScreen.substring(0,kopyaekran.length()-1);
-            resault.setText(kopyaekran);
+            copyScreen=copyScreen.substring(0,copyScreen.length()-1);
+            resault.setText(copyScreen);
         }
     }
     public void click(View view){
@@ -114,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         operator =false;
     }
     public void extract(){
-
         lastNumber=Integer.parseInt(resault.getText().toString());
         firstnumber = firstnumber -lastNumber;
         resault.setText(""+ firstnumber);
@@ -141,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
         number=null;
         operator =false;
     }
-
      public void equals(View view){
         if(operator==true){
             if (statuts =="Sum"){
